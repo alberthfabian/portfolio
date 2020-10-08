@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { WHITE, RED, device } from '../../components/StyleAll';
+import { WHITE, device } from '../../components/StyleAll';
 
 export const Div = styled.div `
   display: flex;

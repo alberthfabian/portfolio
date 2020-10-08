@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { WHITE, RED, device} from '../StyleAll';
 
 export const Head = styled.header `
@@ -17,7 +17,7 @@ export const Head = styled.header `
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.a`
     text-decoration: none;
 `;
 

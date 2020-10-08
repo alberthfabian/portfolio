@@ -8,19 +8,19 @@ const Header = () => {
   return (
     <Head>
       <article>
-        <Link to='/'>
+        <StyledLink href='#Home'>
           <Logo src={logo} alt='Logo' />
-        </Link>
+        </StyledLink>
       </article>
       <Nav>
         <Ul>
           <Li>
-            <StyledLink to='/'>
+            <StyledLink href='#Home'>
               <P>Home</P> 
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink to='/'>
+            <StyledLink href='#About'>
               <P>About</P> 
             </StyledLink>
           </Li>
