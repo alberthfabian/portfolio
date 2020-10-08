@@ -43,11 +43,6 @@ export const Img = styled.img `
 `;
 
 export const Photo = styled.img `
-  /* width: 270px;
-  height: 320px;
-  border-radius: 10%;
-  margin-left: 15%;
-  box-shadow: 0px 0px 17px 0px rgba(158,42,43,0.62); */
   @media ${device.mobileS} { 
     display: none;
   }
@@ -67,6 +62,9 @@ export const Info = styled.div `
     color: ${RED};
     font-family: 'Roboto',sans-serif;
     font-size: large;
+    @media ${device.laptop} { 
+      text-align: left;
+    }
   }
   p {
     color: ${WHITE};
