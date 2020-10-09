@@ -52,7 +52,7 @@ export const Photo = styled.img `
     height: 320px;
     border-radius: 10%;
     margin-left: 15%;
-    box-shadow: 0px 0px 17px 0px rgba(158,42,43,0.62);
+    box-shadow: 0px 0px 17px 0px ${RED};
   }
 `;
 
@@ -87,6 +87,7 @@ export const Data = styled.div `
   border: 3px solid ${RED};
   border-radius: 10px;
   padding-left: 3%;
+  box-shadow: 0px 0px 17px 0px ${RED};
   @media ${device.mobileS} { 
     display: block;
   }

@@ -24,7 +24,7 @@ const Header = () => {
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink to='/'>
+            <StyledLink href='#Projects'>
               <P>Projects</P> 
             </StyledLink>
           </Li>

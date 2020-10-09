@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { WHITE, device } from '../../components/StyleAll';
+import { WHITE, RED, device } from '../../components/StyleAll';
 
 export const Div = styled.div `
   display: flex;
@@ -17,9 +17,9 @@ export const Photo = styled.img `
   position: absolute;
   margin-top: 3%;
   border-radius:150px;
-  -webkit-box-shadow: 0px 0px 17px 0px rgba(158,42,43,0.62);
-  -moz-box-shadow: 0px 0px 17px 0px rgba(158,42,43,0.62);
-  box-shadow: 0px 0px 17px 0px rgba(158,42,43,0.62);
+  -webkit-box-shadow: 0px 0px 17px 0px ${RED};
+  -moz-box-shadow: 0px 0px 17px 0px ${RED};
+  box-shadow: 0px 0px 17px 0px ${RED};
   @media ${device.mobileS} { 
     width: 200px;
     height: 200px;

@@ -5,7 +5,7 @@ export const FooterStyle = styled.footer `
   background-color: #1F2233;
   height: 130px;
   text-align: center;
-  margin-top: -21px;
+  margin-top: -25px;
   padding-top: 2%;
   @media ${device.mobileS} { 
     padding-top: 6%;

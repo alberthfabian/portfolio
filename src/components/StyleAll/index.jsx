@@ -10,6 +10,8 @@ const size = {
 
 export const WHITE = '#EAEAEA';
 export const RED = '#9E2A2B';
+export const BLACK = '#111113';
+export const BLUE = '#272731';
 
 export const device = {
   mobileS: `(min-width: ${size.mobileS})`,
