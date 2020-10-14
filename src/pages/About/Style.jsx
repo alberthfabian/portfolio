@@ -1,10 +1,29 @@
 import styled from 'styled-components';
-import { WHITE, RED, device} from '../../components/StyleAll';
+import { WHITE, BLUE, RED, device } from '../../components/StyleAll';
 
 export const Div = styled.div `
-  position: relative;
+  background-color: ${BLUE};
+  width: 100%;
+  height: 600px;
+  top: -16px;
+  padding-bottom: 20%;
   @media ${device.mobileS} { 
     text-align: center;
+  }
+  @media ${device.mobileM} { 
+    top: -23px;
+    height: 580px;
+    padding-bottom: 8%;
+  }
+  @media ${device.mobileL} { 
+    top: -23px;
+    height: 610px;
+  }
+  @media ${device.tablet} { 
+    padding-bottom: 0;
+  }
+  @media ${device.laptop} { 
+    height: 600px;
   }
 `;
 
@@ -12,28 +31,31 @@ export const Section = styled.section `
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 2fr;
-  bottom: 17%;
-  position: absolute;
   align-items: center;
-  width: 100%;
   @media ${device.mobileS} { 
     display: block;
     bottom: 0%;
+    margin-right: 7%;
+    margin-left: 7%;
   }
   @media ${device.mobileM} { 
     bottom: 5%;
   }
   @media ${device.mobileL} { 
-    bottom: 4%;
+    bottom: 5%;
   }
   @media ${device.laptop} { 
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 2fr;
-    bottom: 5%;
-    position: absolute;
+    bottom: 6%;
     align-items: center;
     width: 100%;
+    margin: 0px;
+  }
+  @media ${device.laptopL} { 
+    position: static;
+    height: 536px;
   }
 `;
 
@@ -57,13 +79,28 @@ export const Photo = styled.img `
 `;
 
 export const Info = styled.div `
-  margin-right: 15%;
+  @media ${device.mobileS} { 
+    margin: 0px;
+  }
+  @media ${device.laptop} { 
+    margin-right: 7%;
+  }
   h1 {
     color: ${RED};
     font-family: 'Roboto',sans-serif;
     font-size: large;
+    @media ${device.mobileS} { 
+      padding-top: 10%;
+      margin-top: 0px;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    @media ${device.tablet} { 
+      padding-top: 5%;
+    }
     @media ${device.laptop} { 
       text-align: left;
+      margin: 0px;
     }
   }
   p {
@@ -71,12 +108,6 @@ export const Info = styled.div `
     font-family: 'Roboto',sans-serif;
     font-size: large;
     text-align: justify;
-  }
-  @media ${device.mobileS} { 
-    margin: 5%;
-  }
-  @media ${device.mobileS} { 
-    margin-right: 8%;
   }
 `;
 
@@ -98,5 +129,8 @@ export const Data = styled.div `
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
+  }
+  @media ${device.laptopL} { 
+    margin-top: 5%;
   }
 `;

@@ -9,6 +9,15 @@ export const Div = styled.div `
 export const Mountains = styled.img `
   width: 100%;
   height: 600px;
+  @media ${device.mobileS} { 
+    height: 500px;
+  }
+  @media ${device.mobileM} { 
+    height: 500px;
+  }
+  @media ${device.laptop} { 
+    height: 600px;
+  }
 `;
 
 export const Photo = styled.img `
@@ -23,23 +32,28 @@ export const Photo = styled.img `
   @media ${device.mobileS} { 
     width: 200px;
     height: 200px;
-    margin-top: 45%;
+    margin-top: 17%;
   }
   @media ${device.mobileM} { 
     width: 200px;
     height: 200px;
-    margin-top: 40%;
+    margin-top: 17%;
   }
   @media ${device.tablet} { 
-    width: 280px;
-    height: 280px;
-    margin-top: 14%;
+    width: 240px;
+    height: 240px;
+    margin-top: 6%;
   }
   @media ${device.laptop} { 
-    margin-top: 9%;
+    width: 280px;
+    height: 280px;
+    margin-top: 4%;
+  }
+  @media ${device.laptopL} { 
+    margin-top: 4%;
   }
   @media ${device.desktop} { 
-    margin-top: 5%;
+    margin-top: 2%;
   }
 `;
 
@@ -79,15 +93,15 @@ export const Data = styled.div `
     top: 72%;
   }
   @media ${device.tablet} { 
-    top: 80%;
+    top: 75%;
   }
   @media ${device.laptop} { 
-    top: 62%;
+    top: 65%;
   }
   @media ${device.laptopL} { 
-    top: 43%;
+    top: 50%;
   }
   @media ${device.desktop} { 
-    top: 23%;
+    top: 25%;
   }
 `;

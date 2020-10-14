@@ -1,23 +1,17 @@
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { WHITE, RED, device} from '../StyleAll';
 
 export const Head = styled.header `
   display: flex;
   justify-content: space-between;
-  width: -webkit-fill-available;
   height: 80px;
   background-color: #1F2233;
   padding-left: 3%;
   padding-right: 3%;
-  position: fixed;
-  z-index: 20;
-  @media ${device.desktop} { 
-    width: 1287px;
-  }
 `;
 
-export const StyledLink = styled.a`
+export const StyledLink = styled(Link)`
     text-decoration: none;
 `;
 

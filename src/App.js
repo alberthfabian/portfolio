@@ -1,16 +1,31 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Layout from './components/Layout';
-import All from './pages/All';
+import Home from './pages/Home';
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Skills from './pages/Skills'
+import Certificates from './pages/Certificates';
+import Diploma from './pages/Diploma';
+import PageNotFound from './components/PageNotFound';
+import { ServerProvider } from './Context';
 
 const App = () => (
-  <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route path="/" component={All}/>
-      </Switch>
-    </Layout>
-  </BrowserRouter>
+  <ServerProvider>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/about' component={About}/>
+          <Route exact path='/projects' component={Projects}/>
+          <Route exact path='/skills' component={Skills}/>
+          <Route exact path='/certificates' component={Certificates}/>
+          <Route exact path='/certificates/:id' component={Diploma}/>
+          <Route component={PageNotFound}/>
+        </Switch>
+      </Layout>
+    </BrowserRouter>
+  </ServerProvider>
 );
 
 export default App;

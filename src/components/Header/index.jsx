@@ -7,44 +7,44 @@ const Header = () => {
   return (
     <Head>
       <article>
-        <StyledLink href='#Home'>
+        <StyledLink to='/'>
           <Logo src={logo} alt='Logo' />
         </StyledLink>
       </article>
       <Nav>
         <Ul>
           <Li>
-            <StyledLink href='#Home'>
+            <StyledLink to='/'>
               <P>Home</P> 
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink href='#About'>
+            <StyledLink to='/about'>
               <P>About</P> 
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink href='#Projects'>
+            <StyledLink to='/projects'>
               <P>Projects</P> 
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink to='/'>
+            <StyledLink to='/skills'>
               <P>Skills</P> 
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink to='/'>
+            <StyledLink to='/certificates'>
               <P>Certificates</P> 
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink to='/'>
+            <StyledLink to='/blog'>
               <P>Blog</P> 
             </StyledLink>
           </Li>
           <Li>
-            <StyledLink to='/'>
+            <StyledLink to='/contact'>
               <P>Contact</P> 
             </StyledLink>
           </Li>
