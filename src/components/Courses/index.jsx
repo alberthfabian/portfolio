@@ -7,10 +7,10 @@ const Courses = (props) => {
 
   const { openDiploma } = useServer();
 
-  const { name, url, id } = props;
+  const { type, name, url, id } = props;
 
   return (
-    <Link to={`/certificates/${id}`} onClick={() => openDiploma(id)} >
+    <Link to={`/certificates/${id}`} onClick={() => openDiploma(type, id)} >
       <Img src={url} alt={name}/>
     </Link>
   )

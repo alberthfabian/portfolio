@@ -37,5 +37,16 @@ export const LinkedIn = styled.img `
 
 export const Instagram = styled.img `
   height: 30px;
+  margin-right: 10px;
+`;
+
+export const Twitter = styled.img `
+  height: 30px;
+  margin-right: 10px;
+`;
+
+export const GitHub = styled.img `
+  height: 30px;
+  margin-right: 10px;
 `;
 
