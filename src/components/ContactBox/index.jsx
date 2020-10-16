@@ -1,17 +1,27 @@
 import React from 'react';
-import { Article, Img } from './Style';
+import { Article, Img, A } from './Style';
 
 const ContactBox = (props) => {
 
-  const { name, description, icon } = props;
+  const { id, name, description, icon } = props;
 
   return (
     <>
       <Article>
         <h3>{name}</h3>
-        <p>{description}</p>
+        {id > 3 ?
+          <a href={description} target='_blank' rel='noopener noreferrer'>
+            <p>{description}</p>
+          </a> :
+          <p>{description}</p>
+        }
       </Article>
-      <Img src={icon} alt={name}/>
+      {id > 3 ?
+        <A href={description} target='_blank' rel='noopener noreferrer'>
+          <Img src={icon} alt={name}/>
+        </A> :
+        <Img src={icon} alt={name}/>
+      }
     </>
   )
 };

@@ -12,7 +12,7 @@ export const DataContact = [
   {
     'id': 3,
     'name': 'phone',
-    'description': '(+57) 322-8107821'
+    'description': '(+57) 322 - 8107821'
   },
   {
     'id': 4,
