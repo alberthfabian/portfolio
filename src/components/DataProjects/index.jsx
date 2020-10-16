@@ -18,7 +18,7 @@ export const DataProjects = [
   {
     'id': 3,
     'name': 'Papelería Golden',
-    'technologies': ['React', 'React Router', 'Sass', 'Context'],
+    'technologies': ['WordPress', 'Plugins', 'IP Acquisition', 'Hosting Acquisition'],
     'src': golden
   }
 ];

@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Certificates from './pages/Certificates';
 import Diploma from './pages/Diploma';
+import Contact from './pages/Contact';
 import PageNotFound from './components/PageNotFound';
 import { ServerProvider } from './Context';
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route exact path='/skills' component={Skills}/>
           <Route exact path='/certificates' component={Certificates}/>
           <Route exact path='/certificates/:id' component={Diploma}/>
+          <Route exact path='/contact' component={Contact}/>
           <Route component={PageNotFound}/>
         </Switch>
       </Layout>
