@@ -36,7 +36,9 @@ export const Div = styled.div `
   margin: auto;
   border: 3px solid ${RED};
   border-radius: 5px;
-  box-shadow: 0px 0px 17px 0px ${RED};
+  &:hover {
+    box-shadow: 0px 0px 17px 0px ${RED};
+  }
   width: 280px;
   height: 100px;
   padding-top: 5px;

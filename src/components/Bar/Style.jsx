@@ -6,6 +6,9 @@ export const BarValue = styled.div `
   border-radius: 10px;
   width: 280px;
   height: 20px;
+  &:hover {
+    box-shadow: 0px 0px 17px 0px ${RED};
+  }
 `
 
 export const Value = styled.div `
