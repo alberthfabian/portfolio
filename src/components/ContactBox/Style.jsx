@@ -9,15 +9,16 @@ export const Article = styled.article `
   a {
     text-decoration: none;
     margin: auto;
-    p {
-      color: ${WHITE};
-      font-family: 'Roboto',sans-serif;
-    }
   }
   p {
     color: ${WHITE};
     font-family: 'Roboto',sans-serif;
   }
+`
+
+export const P = styled.p ` 
+  color: ${WHITE};
+  font-family: 'Roboto',sans-serif;
 `
 
 export const Img = styled.img ` 

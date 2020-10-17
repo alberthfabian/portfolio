@@ -4,7 +4,7 @@ const images = {
   instagram: require('../../assets/img/Icons/Instagram.png'),
   linkedIn: require('../../assets/img/Icons/LinkedIn.png'),
   location: require('../../assets/img/Icons/Location.png'),
-  phone: require('../../assets/img/Icons/Phone.png'),
+  whatsApp: require('../../assets/img/Icons/WhatsApp.png'),
   twitter: require('../../assets/img/Icons/Twitter.png'),
   default: require('../../assets/img/Icons/Default.png'),
 }

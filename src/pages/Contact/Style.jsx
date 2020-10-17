@@ -32,8 +32,6 @@ export const Container = styled.div `
 `
 
 export const Div = styled.div ` 
-  display: grid;
-  grid-template-columns: 3fr 1fr; 
   align-items: center;
   margin: auto;
   border: 3px solid ${RED};
@@ -45,4 +43,16 @@ export const Div = styled.div `
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  div {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+  }
+  a {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    text-decoration: none;
+  }
+  &:hover {
+    width: 300px;
+  }
 `

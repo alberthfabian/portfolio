@@ -11,7 +11,9 @@ const Contact = () => {
       <Container>
         {DataContact.map(contact => (
           <Div key={contact.id}>
-            <ContactBox id={contact.id} name={contact.name} description={contact.description} icon={getIcon(contact.name)}/>
+            <a href={contact.url} target='_blank' rel='noopener noreferrer'>
+              <ContactBox id={contact.id} name={contact.name} description={contact.description} icon={getIcon(contact.name)} url={contact.url}/>
+            </a>
           </Div>
         ))}
       </Container>

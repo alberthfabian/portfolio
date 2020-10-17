@@ -1,17 +1,19 @@
 export const DataContact = [
   {
     'id': 1,
-    'name': 'location',
-    'description': 'Bogotá, Colombia'
+    'name': 'email',
+    'description': 'alberth.perez@hotmail.com',
+    'url': 'mailto:alberth.perez@hotmail.com?Subject=Interesado%20en%20Página%20Web'
   },
   {
     'id': 2,
-    'name': 'email',
-    'description': 'alberth.perez@hotmail.com'
+    'name': 'location',
+    'description': 'Bogotá, Colombia',
+    'url': 'https://www.google.com/maps/place/Bogot%C3%A1/@4.6486259,-74.2478966,11z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9bfd2da6cb29:0x239d635520a33914!8m2!3d4.7109886!4d-74.072092?hl=es'
   },
   {
     'id': 3,
-    'name': 'phone',
+    'name': 'whatsApp',
     'description': '(+57) 322 - 8107821',
     'url': 'https://api.whatsapp.com/send?phone=573228107821&text=Estoy%20atento%20para%20escribirte'
   },
