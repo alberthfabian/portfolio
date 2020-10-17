@@ -26,9 +26,11 @@ export const Photo = styled.img `
   position: absolute;
   margin-top: 3%;
   border-radius:150px;
-  -webkit-box-shadow: 0px 0px 17px 0px ${RED};
-  -moz-box-shadow: 0px 0px 17px 0px ${RED};
-  box-shadow: 0px 0px 17px 0px ${RED};
+  &:hover {
+    -webkit-box-shadow: 0px 0px 17px 0px ${RED};
+    -moz-box-shadow: 0px 0px 17px 0px ${RED};
+    box-shadow: 0px 0px 17px 0px ${RED};
+  }
   @media ${device.mobileS} { 
     width: 200px;
     height: 200px;
