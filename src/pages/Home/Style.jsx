@@ -85,23 +85,25 @@ export const Frontend = styled.p `
 
 export const Data = styled.div `
   position: absolute;
-  top: 65%;
   @media ${device.mobileS} { 
-    top: 67%;
+    top: 370px;
+  }
+  @media ${device.mobileM} { 
+    top: 380px;
   }
   @media ${device.mobileL} { 
-    top: 72%;
+    top: 390px;
   }
   @media ${device.tablet} { 
-    top: 75%;
+    top: 390px;
   }
   @media ${device.laptop} { 
-    top: 65%;
+    top: 440px;
   }
   @media ${device.laptopL} { 
-    top: 50%;
+    top: 460px;
   }
   @media ${device.desktop} { 
-    top: 25%;
+    top: 460px;
   }
 `;

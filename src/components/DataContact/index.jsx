@@ -3,7 +3,7 @@ export const DataContact = [
     'id': 1,
     'name': 'email',
     'description': 'alberth.perez@hotmail.com',
-    'url': 'mailto:alberth.perez@hotmail.com?Subject=Interesado%20en%20Página%20Web'
+    'url': 'mailto:alberth.perez@hotmail.com?Subject=Estoy%20Interesado%20en%20%20una%Página%20Web'
   },
   {
     'id': 2,
