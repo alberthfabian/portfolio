@@ -10,6 +10,7 @@ import Diploma from './pages/Diploma';
 import Contact from './pages/Contact';
 import PageNotFound from './components/PageNotFound';
 import { ServerProvider } from './Context';
+import WhatsApp from './components/WhatsApp';
 
 const App = () => (
   <ServerProvider>
@@ -25,6 +26,7 @@ const App = () => (
           <Route exact path='/contact' component={Contact}/>
           <Route component={PageNotFound}/>
         </Switch>
+        <WhatsApp/>
       </Layout>
     </BrowserRouter>
   </ServerProvider>

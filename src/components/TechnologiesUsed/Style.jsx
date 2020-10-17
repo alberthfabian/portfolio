@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { WHITE, BLUE, RED, device } from '../StyleAll'
 
+export const A = styled.a ` 
+  text-decoration: none;
+`
+
 export const Figure = styled.figure `
   margin: auto;
   figcaption {

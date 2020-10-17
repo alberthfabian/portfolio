@@ -5,15 +5,17 @@ import golden from '../../assets/img/Golden.png';
 export const DataProjects = [
   {
     'id': 1,
-    'name': 'Babysitter',
-    'technologies': ['React', 'React Router', 'Sass', 'Context', 'Xd'],
-    'src': lookema
+    'name': 'Pokedex',
+    'technologies': ['React', 'React Router', 'Sass', 'Context'],
+    'src': lookema,
+    'url': 'https://github.com/alberthfabian/pokedex'
   },
   {
     'id': 2,
-    'name': 'Pokedex',
-    'technologies': ['React', 'React Router', 'Sass', 'Context'],
-    'src': babysitter
+    'name': 'Babysisster',
+    'technologies': ['React', 'React Router', 'Sass', 'Context', 'Xd'],
+    'src': babysitter,
+    'url': 'https://github.com/alberthfabian/babysitter'
   },
   {
     'id': 3,

@@ -13,7 +13,7 @@ const Projects = () => {
       <Article>
         {DataProjects.map(technology => (
           <span key={technology.id}>
-            <TechnologiesUsed name={technology.name} technologies={technology.technologies} src={technology.src}/>
+            <TechnologiesUsed url={technology.url} name={technology.name} technologies={technology.technologies} src={technology.src}/>
           </span>
         ))}
       </Article>
