@@ -1,21 +1,12 @@
 import styled from 'styled-components';
-import { WHITE, RED, device } from '../StyleAll';
+import { WHITE, RED } from '../StyleAll';
 
 export const FooterStyle = styled.footer `
   background-color: #1F2233;
   height: 130px;
   text-align: center;
   margin-top: -25px;
-  padding-top: 2%;
-  @media ${device.mobileS} { 
-    padding-top: 6%;
-  }
-  @media ${device.tablet} { 
-    padding-top: 3%;
-  }
-  @media ${device.laptopL} { 
-    padding-top: 2%;
-  }
+  padding-top: 8px;
 `;
 
 export const P = styled.p `

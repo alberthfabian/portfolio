@@ -24,7 +24,9 @@ export const Technologies = styled.div `
   padding-bottom: 3%;
   position: relative;
   top: -22px;
-  box-shadow: 0px 0px 17px 0px ${RED};
+  &:hover {
+    box-shadow: 0px 0px 17px 0px ${RED};
+  }
   h2 {
     text-align: center;
     padding-top: 5%;
@@ -44,7 +46,9 @@ export const Img = styled.img `
   height: 250px;
   border: 3px solid ${RED};
   border-radius: 5px;
-  box-shadow: 0px 0px 17px 0px ${RED};
+  &:hover {
+    box-shadow: 0px 0px 17px 0px ${RED};
+  }
   margin: center;
   @media ${device.tablet} {
     width: 300px;

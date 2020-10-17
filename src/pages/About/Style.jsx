@@ -9,21 +9,26 @@ export const Div = styled.div `
   padding-bottom: 20%;
   @media ${device.mobileS} { 
     text-align: center;
+    height: 625px;
   }
   @media ${device.mobileM} { 
     top: -23px;
-    height: 580px;
+    height: 625px;
     padding-bottom: 8%;
   }
   @media ${device.mobileL} { 
     top: -23px;
-    height: 610px;
+    height: 625px;
   }
   @media ${device.tablet} { 
     padding-bottom: 0;
+    height: 445px;
   }
   @media ${device.laptop} { 
-    height: 600px;
+    height: 440px;
+  }
+  @media ${device.laptopL} { 
+    height: 505px;
   }
 `;
 
@@ -113,24 +118,45 @@ export const Info = styled.div `
 
 export const Data = styled.div `
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
   border: 3px solid ${RED};
   border-radius: 10px;
   padding-left: 3%;
+  padding-right: 3%;
   box-shadow: 0px 0px 17px 0px ${RED};
-  @media ${device.mobileS} { 
-    display: block;
+  margin-top: 40px;
+  padding-top: 15px;
+  @media ${device.mobileS} {
+    grid-template-columns: 1fr; 
+    p {
+      font-size: 15px;
+    }
   }
-  @media ${device.mobileL} { 
-    margin-top: 10%;
+  @media ${device.tablet} {
+    p {
+      text-align: left;
+    }
   }
   @media ${device.tablet} { 
-    display: grid;
-    grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
-  }
-  @media ${device.laptopL} { 
-    margin-top: 5%;
+    font-size: large;
   }
 `;
+
+export const Grid = styled.div `
+  a {
+    display: flex;
+    text-decoration: none;
+    img {
+      height: 30px;
+      margin-right: 20px;
+      &:hover {
+        box-shadow: 0px 0px 17px 0px ${RED};
+      }
+    }
+    p {
+      &:hover {
+        box-shadow: 0px 0px 17px 0px ${RED};
+      }
+    }
+  }
+`

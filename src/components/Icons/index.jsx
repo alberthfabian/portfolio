@@ -6,6 +6,7 @@ const images = {
   location: require('../../assets/img/Icons/Location.png'),
   whatsApp: require('../../assets/img/Icons/WhatsApp.png'),
   twitter: require('../../assets/img/Icons/Twitter.png'),
+  programmer: require('../../assets/img/Icons/Programmer.png'),
   default: require('../../assets/img/Icons/Default.png'),
 }
 
