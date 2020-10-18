@@ -8,14 +8,10 @@ const Burger = () => {
 
   const { menu, modal } = useServer();
 
-  const event = () => {
-    modal(false);
-  }
-
   return (
     <>
-      {menu === true ?
-        <Div onClick={() => event()}>
+      {menu === false ?
+        <Article>
           <Section>
             <div>
               <button onClick={() => modal(false)}>
@@ -24,14 +20,18 @@ const Burger = () => {
             </div>
             <NavbarMobil/>
           </Section>
-        </Div> : 
-        <Article>
+        </Article> :
+        <Div onClick={() => modal(false)}>
           <Section>
+            <div>
+              <button onClick={() => modal(false)}>
+                <img src={cross} alt='Cross'/>
+              </button>
+            </div>
             <NavbarMobil/>
           </Section>
-        </Article>
+        </Div> 
       }
-
     </>
   )
 };
