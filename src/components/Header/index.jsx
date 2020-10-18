@@ -1,6 +1,8 @@
 import React from 'react';
+import Menu from '../Menu';
 import logo from '../../assets/img/Logo.png';
-import { Logo, Head, Li, Ul, P, StyledLink, Nav } from './Style.jsx';
+import Navbar from '../Navbar';
+import { Logo, Head, StyledLink } from './Style.jsx';
 
 const Header = () => {
 
@@ -11,7 +13,9 @@ const Header = () => {
           <Logo src={logo} alt='Logo' />
         </StyledLink>
       </article>
-      <Nav>
+      <Menu/>
+      <Navbar/>
+      {/* <Nav>
         <Ul>
           <Li>
             <StyledLink to='/'>
@@ -49,7 +53,7 @@ const Header = () => {
             </StyledLink>
           </Li>
         </Ul>
-      </Nav>
+      </Nav> */}
     </Head>
   );
 };

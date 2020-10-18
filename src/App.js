@@ -11,10 +11,12 @@ import Contact from './pages/Contact';
 import PageNotFound from './components/PageNotFound';
 import { ServerProvider } from './Context';
 import WhatsApp from './components/WhatsApp';
+import Burger from './components/Burger';
 
 const App = () => (
   <ServerProvider>
     <BrowserRouter>
+      <Burger/>
       <Layout>
         <Switch>
           <Route exact path='/' component={Home}/>

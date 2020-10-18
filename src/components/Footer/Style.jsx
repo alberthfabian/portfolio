@@ -24,20 +24,32 @@ export const Name = styled.p `
 export const LinkedIn = styled.img `
   height: 30px;
   margin-right: 10px;
+  &:hover {
+    height: 35px;
+  }
 `;
 
 export const Instagram = styled.img `
   height: 30px;
   margin-right: 10px;
+  &:hover {
+    height: 35px;
+  }
 `;
 
 export const Twitter = styled.img `
   height: 30px;
   margin-right: 10px;
+  &:hover {
+    height: 35px;
+  }
 `;
 
 export const GitHub = styled.img `
   height: 30px;
   margin-right: 10px;
+  &:hover {
+    height: 32px;
+  }
 `;
 

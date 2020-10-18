@@ -10,6 +10,7 @@ const Server = React.createContext();
 export function ServerProvider(props) {
 
   const[ onlyDiploma, setOnlyDiploma ] = useState([]);
+  const[ menu, setMenu ] = useState(false);
 
   const openDiploma = useCallback((type, id) => {
     const diploma = Diplomas.filter(diploma => diploma.type === type);
@@ -17,16 +18,22 @@ export function ServerProvider(props) {
     setOnlyDiploma(value[0]);
   },[]);
 
+  const modal = useCallback((e) => {
+    setMenu(e);
+  },[]);
+
   const value = useMemo(() => {
     return ({
+      menu,
       Areas,
       onlyDiploma,
       DataProjects,
       Technologies,
       Diplomas,
-      openDiploma
+      openDiploma,
+      modal
     })
-  }, [ onlyDiploma, openDiploma]);
+  }, [ menu, onlyDiploma, openDiploma, modal ]);
 
   return <Server.Provider value={value} {...props} />
 }
