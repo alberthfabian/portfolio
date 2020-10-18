@@ -1,6 +1,6 @@
 import React from 'react';
 import { useServer } from '../../Context';
-import NavbarMovil from '../NavbarMovil';
+import NavbarMobil from '../NavbarMobile';
 import cross from '../../assets/img/Icons/Cross.png';
 import { Div, Section, Article } from './Style';
 
@@ -22,12 +22,12 @@ const Burger = () => {
                 <img src={cross} alt='Cross'/>
               </button>
             </div>
-            <NavbarMovil/>
+            <NavbarMobil/>
           </Section>
         </Div> : 
         <Article>
           <Section>
-            <NavbarMovil/>
+            <NavbarMobil/>
           </Section>
         </Article>
       }
