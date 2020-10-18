@@ -8,14 +8,14 @@ const Burger = () => {
 
   const { menu, modal } = useServer();
 
-  if(menu === false) {
-    return null;
+  const event = () => {
+    modal(false);
   }
 
   return (
     <>
       {menu === true ?
-        <Div>
+        <Div onClick={() => event()}>
           <Section>
             <div>
               <button onClick={() => modal(false)}>

@@ -35,7 +35,7 @@ export const Article = styled(Div) `
 `
 
 export const Section = styled.section ` 
-  width: 45%;
+  width: 140px;
   height: 600px;
   position: fixed;
   background-color: ${BLUE};
