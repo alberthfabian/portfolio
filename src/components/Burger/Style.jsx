@@ -39,6 +39,6 @@ export const Section = styled.section `
   height: 600px;
   position: fixed;
   background-color: ${BLUE};
-  padding-top: 50px;
+  padding-top: 35px;
 `
 
