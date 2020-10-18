@@ -11,6 +11,13 @@ export function ServerProvider(props) {
 
   const[ onlyDiploma, setOnlyDiploma ] = useState([]);
   const[ menu, setMenu ] = useState(false);
+  const[ diploma, setDiploma ] = useState(false);
+
+  // const openDiploma = useCallback((type, id) => {
+  //   const diploma = Diplomas.filter(diploma => diploma.type === type);
+  //   const value = diploma[0].description.filter(value => value.id === parseInt(id));
+  //   setOnlyDiploma(value[0]);
+  // },[]);
 
   const openDiploma = useCallback((type, id) => {
     const diploma = Diplomas.filter(diploma => diploma.type === type);
@@ -18,12 +25,17 @@ export function ServerProvider(props) {
     setOnlyDiploma(value[0]);
   },[]);
 
+  const modalOpen = useCallback((open) => {
+    setDiploma(open);
+  },[])
+
   const modal = useCallback((e) => {
     setMenu(e);
   },[]);
 
   const value = useMemo(() => {
     return ({
+      diploma,
       menu,
       Areas,
       onlyDiploma,
@@ -31,9 +43,10 @@ export function ServerProvider(props) {
       Technologies,
       Diplomas,
       openDiploma,
-      modal
+      modal,
+      modalOpen
     })
-  }, [ menu, onlyDiploma, openDiploma, modal ]);
+  }, [ diploma, menu, onlyDiploma, openDiploma, modal, modalOpen ]);
 
   return <Server.Provider value={value} {...props} />
 }

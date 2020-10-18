@@ -1,19 +1,22 @@
 import React from 'react';
 import { Div, Article, Img, Button } from './Style';
+import cross from '../../assets/img/Icons/Cross2.png'
 import { useServer } from '../../Context';
 
 const ModalDiploma = () => {
 
-  const { onlyDiploma, showDiploma, closeDiploma } = useServer();
+  const { onlyDiploma, diploma, modalOpen } = useServer();
 
-  if (showDiploma === false) {
+  if (diploma === false) {
     return null;
   }
 
   return (
-    <Div>
+    <Div onClick={() => modalOpen(false)}> 
       <Article>
-        <Button id='x' value='x' onClick={closeDiploma}>X</Button>
+        <Button onClick={() => modalOpen(false)}>
+          <img src={cross} alt='Close'/>
+        </Button>
         <Img src={onlyDiploma.url} alt={onlyDiploma.name}/>
       </Article>
     </Div> 

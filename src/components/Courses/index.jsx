@@ -1,18 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Img } from './Style';
+import { Img, Button } from './Style';
 import { useServer } from '../../Context'
 
 const Courses = (props) => {
 
-  const { openDiploma } = useServer();
+  const { openDiploma, modalOpen } = useServer();
 
   const { type, name, url, id } = props;
 
+  const open = (type, id, value) => {
+    openDiploma(type, id);
+    modalOpen(value);
+  }
+
   return (
-    <Link to={`/certificates/${id}`} onClick={() => openDiploma(type, id)} >
+    <Button onClick={() => open(type, id, true)} >
       <Img src={url} alt={name}/>
-    </Link>
+    </Button>
   )
 };
 

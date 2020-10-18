@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { RED, device } from '../StyleAll';
 
 export const Div = styled.div ` 
+  display: flex;
+  justify-content: center;
   background-color: rgba(31, 34, 51, 0.8);
   width: 100%;
   height: 100%;
@@ -11,31 +13,34 @@ export const Div = styled.div `
 
 export const Article = styled.article ` 
   width: 90%;
-  position: relative;
+  position: fixed;
   border: 3px solid ${RED};
   box-shadow: 0px 0px 17px 0px ${RED};
   border-radius: 10px;
-  margin-left: 10%;
   margin-top: 70px;
   @media ${device.mobileS} {
-    margin-left: 5%;
     height: 200px;
   }
   @media ${device.mobileM} {
-    margin-left: 5%;
     height: 250px;
+    margin-top: 55px;
   }
   @media ${device.mobileL} {
-    margin-left: 5%;
     height: 300px;
+    margin-top: 40px;
   }
   @media ${device.tablet} {
-    height: 500px;
+    width: 80%;
+    height: 400px;
+    margin-top: -15px;
   }
   @media ${device.laptop} {
-    height: 750px;
+    width: 65%;
+    height: 550px;
+    margin-top: -45px;
   }
   @media ${device.laptopL} {
+    width: 70%;
     height: 850px;
   }
 `
@@ -62,6 +67,9 @@ export const Button = styled.button `
     width: 20px;
     height: 20px;
     padding: 1px 1px;
+    img {
+      width: 14px;
+    }
   }
   @media ${device.tablet} {
     right: 10px;
@@ -78,5 +86,9 @@ export const Button = styled.button `
     padding: 4px 4px;
     width: 28px;
     height: 28px;
+    img {
+      width: 16px;
+    }
   }
+
 `
