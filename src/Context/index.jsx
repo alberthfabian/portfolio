@@ -1,6 +1,7 @@
 // import React, { useEffect, useMemo } from 'react';
 import React, { useMemo, useState, useCallback } from 'react';
 import { DataProjects } from '../components/DataProjects';
+import { DataBlog } from '../components/DataBlog';
 import { Technologies } from '../components/Technologies';
 import { Diplomas } from '../components/Diplomas'; 
 import { Areas } from '../components/Areas';
@@ -12,12 +13,12 @@ export function ServerProvider(props) {
   const[ onlyDiploma, setOnlyDiploma ] = useState([]);
   const[ menu, setMenu ] = useState(false);
   const[ diploma, setDiploma ] = useState(false);
+  const[ detail, setDetail ] = useState({});
 
-  // const openDiploma = useCallback((type, id) => {
-  //   const diploma = Diplomas.filter(diploma => diploma.type === type);
-  //   const value = diploma[0].description.filter(value => value.id === parseInt(id));
-  //   setOnlyDiploma(value[0]);
-  // },[]);
+  const Blog = useCallback((id) => {
+    const value = DataBlog.filter(blog => blog.id === parseInt(id));
+    setDetail(value[0]);
+  },[])
 
   const openDiploma = useCallback((type, id) => {
     const diploma = Diplomas.filter(diploma => diploma.type === type);
@@ -35,6 +36,7 @@ export function ServerProvider(props) {
 
   const value = useMemo(() => {
     return ({
+      detail,
       diploma,
       menu,
       Areas,
@@ -44,9 +46,10 @@ export function ServerProvider(props) {
       Diplomas,
       openDiploma,
       modal,
-      modalOpen
+      modalOpen,
+      Blog
     })
-  }, [ diploma, menu, onlyDiploma, openDiploma, modal, modalOpen ]);
+  }, [ detail, diploma, menu, onlyDiploma, openDiploma, modal, modalOpen, Blog ]);
 
   return <Server.Provider value={value} {...props} />
 }

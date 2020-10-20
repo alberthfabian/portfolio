@@ -21,7 +21,7 @@ export const Mountains = styled.img `
 `;
 
 export const Photo = styled.img `
-  width: 280px;
+  width: 270px;
   height: 280px;
   position: absolute;
   margin-top: 3%;
@@ -32,22 +32,22 @@ export const Photo = styled.img `
     box-shadow: 0px 0px 17px 0px ${RED};
   }
   @media ${device.mobileS} { 
-    width: 200px;
+    width: 180px;
     height: 200px;
     margin-top: 17%;
   }
   @media ${device.mobileM} { 
-    width: 200px;
+    width: 180px;
     height: 200px;
     margin-top: 17%;
   }
   @media ${device.tablet} { 
-    width: 240px;
+    width: 220px;
     height: 240px;
     margin-top: 6%;
   }
   @media ${device.laptop} { 
-    width: 280px;
+    width: 260px;
     height: 280px;
     margin-top: 4%;
   }

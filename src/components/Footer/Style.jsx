@@ -37,6 +37,14 @@ export const Instagram = styled.img `
   }
 `;
 
+export const Facebook = styled.img `
+  height: 30px;
+  margin-right: 10px;
+  &:hover {
+    height: 35px;
+  }
+`;
+
 export const Twitter = styled.img `
   height: 30px;
   margin-right: 10px;

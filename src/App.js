@@ -7,7 +7,9 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Certificates from './pages/Certificates';
 import Diploma from './pages/Diploma';
+import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import Detail from './pages/Detail';
 import PageNotFound from './components/PageNotFound';
 import { ServerProvider } from './Context';
 import WhatsApp from './components/WhatsApp';
@@ -25,6 +27,8 @@ const App = () => (
           <Route exact path='/skills' component={Skills}/>
           <Route exact path='/certificates' component={Certificates}/>
           <Route exact path='/certificates/:id' component={Diploma}/>
+          <Route exact path='/blog' component={Blog}/>
+          <Route exact path='/blog/:id' component={Detail}/>
           <Route exact path='/contact' component={Contact}/>
           <Route component={PageNotFound}/>
         </Switch>

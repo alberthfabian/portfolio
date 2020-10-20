@@ -2,6 +2,7 @@ const images = {
   email: require('../../assets/img/Icons/Email.png'),
   gitHub: require('../../assets/img/Icons/GitHub.png'),
   instagram: require('../../assets/img/Icons/Instagram.png'),
+  facebook: require('../../assets/img/Icons/Facebook.png'),
   linkedIn: require('../../assets/img/Icons/LinkedIn.png'),
   location: require('../../assets/img/Icons/Location.png'),
   whatsApp: require('../../assets/img/Icons/WhatsApp.png'),

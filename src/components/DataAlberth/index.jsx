@@ -31,12 +31,18 @@ export const DataAlberth = [
   },
   {
     'id': 6,
+    'name': 'facebook',
+    'description': 'https://bit.ly/35grIjO',
+    'url': 'https://bit.ly/35grIjO' 
+  },
+  {
+    'id': 7,
     'name': 'twitter',
     'description': 'https://bit.ly/3lRbvs2',
     'url': 'https://bit.ly/3lRbvs2' 
   },
   {
-    'id': 7,
+    'id': 8,
     'name': 'gitHub',
     'description': 'https://bit.ly/3lKAFIC',
     'url': 'https://bit.ly/3lKAFIC'
