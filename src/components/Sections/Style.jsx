@@ -23,6 +23,9 @@ export const H1 = styled.h1 `
   @media ${device.laptop} {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  @media ${device.laptopL} {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
  `
 
 export const Section = styled.section ` 

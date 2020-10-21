@@ -3,8 +3,8 @@ import React, { useMemo, useState, useCallback } from 'react';
 import { DataProjects } from '../components/DataProjects';
 import { DataBlog } from '../components/DataBlog';
 import { Technologies } from '../components/Technologies';
-import { Diplomas } from '../components/Diplomas'; 
-import { Areas } from '../components/Areas';
+import { DataDiplomas } from '../components/DataDiplomas'; 
+import { DataAreas } from '../components/DataAreas';
 
 const Server = React.createContext();
 
@@ -21,7 +21,7 @@ export function ServerProvider(props) {
   },[])
 
   const openDiploma = useCallback((type, id) => {
-    const diploma = Diplomas.filter(diploma => diploma.type === type);
+    const diploma = DataDiplomas.filter(diploma => diploma.type === type);
     const value = diploma[0].description.filter(value => value.id === parseInt(id));
     setOnlyDiploma(value[0]);
   },[]);
@@ -39,11 +39,11 @@ export function ServerProvider(props) {
       detail,
       diploma,
       menu,
-      Areas,
+      DataAreas,
       onlyDiploma,
       DataProjects,
       Technologies,
-      Diplomas,
+      DataDiplomas,
       openDiploma,
       modal,
       modalOpen,

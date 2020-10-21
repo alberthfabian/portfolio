@@ -9,7 +9,7 @@ const BlogInfo = (props) => {
 
   const { Blog } = useServer();
 
-  return (
+  return (   
     <Article>
       <div>
         <img src={img} alt={title}/>

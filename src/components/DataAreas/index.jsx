@@ -1,34 +1,50 @@
-export const Areas = [
+export const DataAreas = [
   {
     'id': 1,
     'name': 'Careers'
   },
   {
     'id': 2,
+    'name': 'English'
+  },
+  {
+    'id': 3,
     'name': 'Development and Engineering'
   },
   // {
-  //   'id': 3,
+  //   'id': 4,
   //   'name': 'Design and UX'
   // },
   // {
-  //   'id': 4,
+  //   'id': 5,
   //   'name': 'Marketing'
   // },
   {
-    'id': 5,
+    'id': 6,
+    'name': 'Marketing'
+  },
+  {
+    'id': 7,
+    'name': 'Sciences'
+  },
+  {
+    'id': 8,
     'name': 'Business and Entrepreneurship'
   },
   // {
-  //   'id': 6,
+  //   'id': 9,
   //   'name': 'Audiovisual Production'
   // },
-  // {
-  //   'id': 7,
-  //   'name': 'Professional Growth'
-  // },
   {
-    'id': 8,
+    'id': 10,
+    'name': 'Professional Growth'
+  },
+  {
+    'id': 11,
     'name': 'Startups'
+  },
+  {
+    'id': 12,
+    'name': 'Other'
   }
 ];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Img, Button } from './Style';
-import { useServer } from '../../Context'
+import { useServer } from '../../Context';
 
 const Courses = (props) => {
 

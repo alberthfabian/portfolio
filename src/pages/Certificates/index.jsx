@@ -6,12 +6,12 @@ import { useServer } from '../../Context';
 
 const Certificates = () => {
 
-  const { Areas } = useServer();
-
-  return (
+  const { DataAreas } = useServer();
+  
+  return ( 
     <Div id='Diploma'>
       <ModalDiploma/>
-      {Areas.map(area => (
+      {DataAreas.map(area => (
         <span key={area.id}>
           <Sections name={area.name}/>
         </span>

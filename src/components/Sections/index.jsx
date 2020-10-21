@@ -4,18 +4,23 @@ import { H1, Figure, Section } from './Style';
 import { useServer } from '../../Context';
 
 const Sections = (props) => {
-
-  const { Diplomas } = useServer();
+  
+  const { DataDiplomas } = useServer();
   const { name } = props;
+
+  function date(a, b) {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  }  
 
   return (
     <>
       <H1>{name}</H1>
       <Section>
-        {Diplomas.filter(Diploma => Diploma.type === name).map(Diploma => (
+        {DataDiplomas.filter(Diploma => Diploma.type === name).map(Diploma => (
           <Figure key={Diploma.id}>
-            {Diploma.description.map(value => (
+            {Diploma.description.sort(date).map(value => (
               <span key={value.id}>
+                {console.log(value)}
                 <Courses type={Diploma.type} id={value.id} name={value.name} url={value.url}/>
               </span>
             ))}
